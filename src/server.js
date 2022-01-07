@@ -1,5 +1,5 @@
 const express = require("express");
-const Joi = require('joi');
+const joi = require('joi');
 
 
 const fs = require("fs"); // file system
