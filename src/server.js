@@ -102,7 +102,7 @@ app.get("/api/products/:id", (req, res) => {
   res.status(200).send(product);
 })
 
-app.listen(process.env.port || 3000, () =>
+app.listen(process.env.PORT || 3000, () =>
   console.log(`Listenning on port ${process.env.PORT} || 3000...`)
 );
 
