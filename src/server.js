@@ -85,7 +85,7 @@ app.put("/api/products/:id", (req, res) => {
   });
   const {error} = schemaPut.validate(change); // Vérifie si change correspond bien au schema
   if(error){
-    return res.status(400).send(validationSchema.error);
+    return res.status(400).send(error);
   }
   for(const key in change) {
     product[key] = change[key];
